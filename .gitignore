@@ -1,0 +1,10 @@
+# Raw Olist data — keep large CSV files out of GitHub
+/data/*.csv
+/data/*.zip
+/data/*.sqlite
+/data/*.db
+
+# Local/editor files
+.DS_Store
+.vscode/
+.idea/

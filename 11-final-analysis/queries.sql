@@ -131,6 +131,10 @@ ORDER BY seller_count DESC;
 -- Compare one-time and repeat customers to understand customer
 -- retention and the revenue contribution of repeat purchasing.
 
+-- SQL Concepts:
+-- CTEs, JOINs, COUNT(DISTINCT), GROUP BY, CASE expressions,
+-- aggregate functions, and percentage calculations.
+
 WITH customer_orders AS (
     SELECT
         c.customer_unique_id,

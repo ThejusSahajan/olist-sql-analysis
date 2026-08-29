@@ -9,11 +9,34 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 The raw CSV files are intentionally **not committed to this repository**. Download the dataset separately and place the required CSV files in `data/` for local analysis.
 
+## Tables Used
+
+| Table | Description |
+|-------|-------------|
+| `orders` | Order-level status and timestamps |
+| `customers` | Customer location and identifiers |
+| `order_items` | Line-item level product, price, and seller data |
+| `order_payments` | Payment type and value per order |
+| `order_reviews` | Customer review scores and comments |
+| `products` | Product category and attributes |
+| `sellers` | Seller location and identifiers |
+| `product_category_name_translation` | English translations of product categories |
+| `geolocation` | Zip-code-based geographic reference data |
+
 ## Project Goals
 
 - Build practical SQL skills using a realistic relational e-commerce dataset.
 - Translate business questions into SQL queries rather than practicing syntax in isolation.
 - Finish with an interview-ready analysis that combines multiple SQL concepts.
+
+## Key Findings
+
+- **Repeat Purchase Rate:** Only 3.13% of customers placed more than one order, highlighting a low level of repeat purchasing and a clear customer-retention opportunity. Repeat customers generated R$778,821.97 in revenue.
+- **Seller Revenue Concentration:** The top 10 sellers generated R$1.79M in revenue, representing 13.15% of total seller revenue — useful for assessing seller concentration and dependency risk.
+- **Top Product Category:** Beauty & Health leads all categories, generating approximately R$1.26M (9.26% of total revenue).
+- **Delivery Performance Impact:** On-time deliveries averaged a 4.29/5 review score, compared to 2.27/5 for late deliveries — showing a strong link between delivery performance and customer satisfaction.
+
+Full queries and business context for each finding are in [`insights/`](./insights).
 
 ## Structured Learning Progression
 
@@ -46,7 +69,6 @@ Queries are framed around realistic e-commerce questions, including:
 
 ## Repository Structure
 
-```text
 olist-sql-analysis/
   data/
   01-select-where/
@@ -60,8 +82,12 @@ olist-sql-analysis/
   09-window-functions/
   10-ctes/
   11-final-analysis/
+  insights/
+    01-customer-retention.sql
+    02-seller-revenue-concentration.sql
+    03-product-category-revenue.sql
+    04-delivery-performance.sql
   README.md
-```
 
 ## Query Documentation Standard
 

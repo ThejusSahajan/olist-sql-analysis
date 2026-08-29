@@ -69,6 +69,7 @@ Queries are framed around realistic e-commerce questions, including:
 
 ## Repository Structure
 
+```text
 olist-sql-analysis/
   data/
   01-select-where/
@@ -88,6 +89,7 @@ olist-sql-analysis/
     03-product-category-revenue.sql
     04-delivery-performance.sql
   README.md
+```
 
 ## Query Documentation Standard
 

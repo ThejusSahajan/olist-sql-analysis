@@ -31,10 +31,10 @@ The raw CSV files are intentionally **not committed to this repository**. Downlo
 
 ## Key Findings
 
-- **Repeat Purchase Rate:** Only 3.13% of customers placed more than one order, highlighting a low level of repeat purchasing and a clear customer-retention opportunity. Repeat customers generated R$778,821.97 in revenue.
+- **Repeat Purchase Rate:** Only 3.12% of customers placed more than one order, highlighting a low level of repeat purchasing and a clear customer-retention opportunity. Repeat customers generated R$778,821.97 in revenue.
 - **Seller Revenue Concentration:** The top 10 sellers generated R$1.79M in revenue, representing 13.15% of total seller revenue — useful for assessing seller concentration and dependency risk.
 - **Top Product Category:** Beauty & Health leads all categories, generating approximately R$1.26M (9.26% of total revenue).
-- **Delivery Performance Impact:** On-time deliveries averaged a 4.29/5 review score, compared to 2.27/5 for late deliveries — showing a strong link between delivery performance and customer satisfaction.
+- **Delivery Performance Impact:** On-time deliveries averaged a 4.29/5 review score, compared to 2.27/5 for late deliveries — showing a strong association between delivery performance and customer satisfaction.
 
 Full queries and business context for each finding are in [`insights/`](./insights).
 

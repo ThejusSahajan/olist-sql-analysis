@@ -16,6 +16,7 @@ WITH customer_orders AS (
     FROM customers c
     JOIN orders o
         ON c.customer_id = o.customer_id
+    WHERE o.order_status = 'delivered'          -- added
     GROUP BY c.customer_unique_id
 ),
 
@@ -29,6 +30,7 @@ customer_revenue AS (
         ON c.customer_unique_id = co.customer_unique_id
     JOIN orders o
         ON o.customer_id = c.customer_id
+       AND o.order_status = 'delivered'        -- added
     LEFT JOIN order_items oi
         ON oi.order_id = o.order_id
     GROUP BY co.customer_unique_id, co.order_count
@@ -51,6 +53,6 @@ GROUP BY 1
 ORDER BY total_revenue DESC;
 
 -- Key Finding:
--- 96.88% of customers made only one purchase,
+-- 97% of customers made only one purchase,
 -- while 3.12% were repeat customers.
 -- Repeat customers generated 778,821.97 in revenue.

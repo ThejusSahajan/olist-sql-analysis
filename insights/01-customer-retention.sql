@@ -54,5 +54,5 @@ ORDER BY total_revenue DESC;
 
 -- Key Finding:
 -- 97% of customers made only one purchase,
--- while 3.12% were repeat customers.
+-- while 3.00% were repeat customers.
 -- Repeat customers generated 778,821.97 in revenue.
